@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { HooksApp } from './components/Hooks/HooksApp'
+import { UsuariosComponent } from './fetch/UsuariosComponent.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <Contador value={0} /> */}
     {/* <Listado /> */}
     {/* <ListadoArray /> */}
-    <HooksApp />
+    {/* <HooksApp /> */}
+    <UsuariosComponent></UsuariosComponent>
   </React.StrictMode>
 )
