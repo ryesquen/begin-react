@@ -8,7 +8,7 @@ export const UsuariosComponent = () => {
     <>
       <h1>Lista de Usuario</h1>
       {isLoading ? (
-        'cargando'
+        'Loading....'
       ) : errors ? (
         <p>se produjo un error</p>
       ) : (
@@ -22,16 +22,14 @@ export const UsuariosComponent = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((d) => {
-              return (
-                <tr key={d.id}>
-                  <td>{d.id}</td>
-                  <td>{d.name}</td>
-                  <td>{d.email}</td>
-                  <td>{d.website}</td>
-                </tr>
-              )
-            })}
+            {data.map((d) => (
+              <tr key={d.id}>
+                <td>{d.id}</td>
+                <td>{d.name}</td>
+                <td>{d.email}</td>
+                <td>{d.website}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       )}
